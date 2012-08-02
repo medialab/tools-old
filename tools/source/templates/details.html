@@ -1,3 +1,4 @@
+{% include 'header.html' %}
 <h1><a href="{{url}}">{{name}}</a></h1>
 <p>
 {% if 'image' in globals %}
@@ -5,5 +6,4 @@
 {% endif %}
 {{description}}
 </p>
-<div id="left"><span>Inputs : {{input}}</span></div>
-<div id="right"><span>Outputs : {{output}}</span></div>
+{% include 'footer.html' %}
