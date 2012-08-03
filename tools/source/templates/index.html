@@ -1,11 +1,40 @@
+{% include 'header.html' %}                                                                                                               
 <h1>Medialab Tools</h1>
-<p>List</p>
-<h2 id="tool1"><a href="{{tool1}}.html">{{tool1}}</a></h2>
-<h2 id="tool2"><a href="{{tool2}}.html">{{tool2}}</a></h2>
-<h2 id="tool3"><a href="{{tool3}}.html">{{tool3}}</a></h2> 
+{% if 'element1' in globals %}
+  <h2 id="element1">
+    <a href="{{element1.id}}.html">{{element1.name}}</a>
+  </h2>
+  <p>
+    <a href="{{element1.id}}.html"><img src="{{element1.visual}}" alt="{{element1.name}}" title="{{element1.name}}"/>
+    {% if 'description' in element1 %}{{element1.description}}{% endif %}</a>
+  </p>
+{% endif %}
+{% if 'element2' in globals %}                              
+  <h2 id="element2">
+    <a href="{{element2.id}}.html">{{element2.name}}</a>
+  </h2>
+  <p>
+    <a href="{{element2.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}"/>
+    {% if 'description' in element2 %}{{element2.description}}{% endif %}</a>
+  </p>
+{% endif %}
+{% if 'element3' in globals %}                              
+  <h2 id="element3">
+    <a href="{{element3.id}}.html">{{element3.name}}</a>
+  </h2> 
+  <p>
+    <a href="{{element3.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}"/>
+    {% if 'description' in element3 %}{{element3.description}}{% endif %}</a>
+  </p>
+{% endif %}    
+{% if 'elements4' in globals %}                              
 <ul>
-    {% for tool in tools4 %}
-        <li><a href="{{tool}}.html">{{tool}}</a></li>
-    {% endfor %}
+  {% for element in elements4 %}
+    <li>
+      <a href="{{element.id}}.html"><strong>{{element.name}}</strong>
+      {% if 'description' in element %}<br/><small>{{element.description}}</small>{% endif %}</a>
+    </li>
+  {% endfor %}
 </ul>
-
+{% endif %}     
+{% include 'footer.html' %}                                                                                                               
