@@ -1,46 +1,46 @@
 from jinja2 import Environment, FileSystemLoader
-import os
-import json
 
-def render_tools(path, env, toolnames):
-    res = []
-    for toolname in toolnames:
-        res.append(render_tool(path, env, toolname))
-    return zip(toolnames, res)
+def prepare_list_data(list_file)
+    index_list = json.load(list_file)
 
-def render_tool(path, env, toolname):
-    template = env.get_template("details.html")
+    element_list = [index_list["element1"], index_list["element2"], index_list["element3"]]
+    element_list += index_list["elements4"]
 
-    with open(os.path.join(path, toolname, "meta.json")) as meta:
-        data = json.load(meta)
-    data["name"] = toolname
+    return (index_list, element_list)
 
-    return template.render(**data)
+def gather_element_data(element_meta_file, index_data, idx):
+    element_data = json.load(element_meta_file)
+    element_data["id"] = elementname
+    element_data["title"] = element_data["name"]
 
-def render_index(path, env, index_list):
-    template = env.get_template("index.html")
+    if idx < 4:
+        index_data["element"+`idx`] = element_data
+    else:
+        index_data["elements4"][idx-4] = element_data
 
-    return template.render(**index_list)
+    return (element_data, index_data)
 
-def get_index_list(list_file):
-    return json.load(list_file)
+def render_template(env, template, data, output_file):
+    template = env.get_template(template+".html")
+
+    return output_file.write(template.render(**data))
 
 if __name__ == "__main__":
-    import sys
-    env = Environment(loader=FileSystemLoader(os.path.join(sys.argv[1], "source", "templates")))
+    import os, sys, json
 
-    with open(os.path.join(sys.argv[1], "source", "index.json")) as list_file:
-        index_list = get_index_list(list_file)
+    webdir = sys.argv[1]
+    env = Environment(loader=FileSystemLoader(os.path.join(webdir, "source", "templates")))
 
-    print "#" * 10
-    print "index"
-    print "-" * 10
-    print render_index(sys.argv[1], env, index_list)
+    with open(os.path.join(webdir, "source", "index.json")) as list_file:
+        index_data, element_list = prepare_list_data(list_file)
 
-    tool_list = [index_list["tool1"], index_list["tool2"], index_list["tool3"]]
-    tool_list += index_list["tools4"]
-    for name, t in render_tools(sys.argv[1], env, tool_list):
-        print "#" * 10
-        print name
-        print "-" * 10
-        print t
+    for i, elementname in enumerate(element_list):
+        with open(os.path.join(webdir, elementname, "meta.json")) as meta:
+            (data, index_data) = gather_element_data(meta, index_data)
+
+        with open(os.path.join(webdir, elementname+".html"), "w") as element_html:
+            render_template(env, 'details', data, element_html)
+
+    with open(os.path.join(webdir, "index.html"), "w") as index_html:
+        render_template(env, 'index', index_data, index_html)
+
