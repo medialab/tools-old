@@ -1,7 +1,7 @@
 {% include 'header.html' %}
 <h1><a href="{{url}}">{{name}}</a></h1>
 <p>by {% print ", ".join(authors) %}</p>
-<p><a href="{{url}}"><img class="floatleft" src="{{visual}}" alt="{{name}}" title="{{name}}"/></a>
+<p><a href="{{url}}"><img class="floatleft" src="{{visual}}" alt="{{name}}" title="{{name}}" width="250"/></a>
 {% if 'description' in globals %}
 {{description}}
 {% endif %}
