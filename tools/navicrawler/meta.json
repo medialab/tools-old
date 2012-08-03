@@ -1,9 +1,9 @@
 {
-  "rootId": "example",
-  "name": "Example",
-  "url": "http://medialab.sciences-po.fr/",
-  "description": "Le site du Medialab",
-  "image": "Sc-Po-Medialab-Gris.jpg",
-  "input": "N/A",
-  "output": "HTML"
+  "name": "Navicrawler",
+  "authors": ["Mathieu Jacomy"],
+  "url": "http://webatlas.fr/wp/navicrawler/",
+  "source": "TBD",
+  "licence": "TBD",
+  "visual": "TBD",
+  "description": "..."
 }

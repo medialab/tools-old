@@ -1,9 +1,9 @@
 {
-  "rootId": "example",
-  "name": "Example",
-  "url": "http://medialab.sciences-po.fr/",
-  "description": "Le site du Medialab",
-  "image": "Sc-Po-Medialab-Gris.jpg",
-  "input": "N/A",
-  "output": "HTML"
+  "name": "I Want Hue",
+  "authors": ["Mathieu Jacomy"],
+  "url": "TBD",
+  "source": "TBD",
+  "licence": "TBD",
+  "visual": "",
+  "description": "..."
 }
