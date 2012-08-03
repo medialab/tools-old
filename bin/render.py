@@ -1,6 +1,6 @@
 from jinja2 import Environment, FileSystemLoader
 
-def prepare_list_data(list_file)
+def prepare_list_data(list_file):
     index_list = json.load(list_file)
 
     element_list = [index_list["element1"], index_list["element2"], index_list["element3"]]
@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     for i, elementname in enumerate(element_list):
         with open(os.path.join(webdir, elementname, "meta.json")) as meta:
-            (data, index_data) = gather_element_data(meta, index_data)
+            (data, index_data) = gather_element_data(meta, index_data, i+1)
 
         with open(os.path.join(webdir, elementname+".html"), "w") as element_html:
             render_template(env, 'details', data, element_html)
