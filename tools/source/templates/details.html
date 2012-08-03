@@ -1,17 +1,21 @@
 {% include 'header.html' %}
 <h1><a href="{{url}}">{{name}}</a></h1>
 <p>by {% print ", ".join(authors) %}</p>
-<p><a href="{{url}}"><img class="floatleft" src="{{visual}}" alt="{{name}}" title="{{name}}" width="250"/></a>
-{% if 'description' in globals %}
-{{description}}
-{% endif %}
+<p>
+  <a href="{{url}}"><img class="floatleft" src="{{visual}}" alt="{{name}}" title="{{name}}" width="250"/>
+  {% if description %}{{description}}{% endif %}</a>
 </p>
-{% if 'community' in globals %}
-<p>Community; <a href="{{community}}">{{community}}</a></p>
+{% if community %}
+  <p>Community; <a href="{{community}}">{{community}}</a></p>
 {% endif %}
-<p><a href="{{source}}">Source-code on GitHub</a><br/>
-Licence: {{licence}}</p>
-{% if 'documentation' in globals %}
-<p>More documentation; <a href="{{documentation}}">{{documentaton}}</a></p>
+<p>
+  <a href="{{source}}">Source-code on GitHub</a><br/>
+  Licence: {{licence}}
+</p>
+{% if doc %}
+  {{doc}}
+{% endif %}
+{% if documentation %}
+  <p>More documentation; <a href="{{documentation}}">{{documentation}}</a></p>
 {% endif %}
 {% include 'footer.html' %}

@@ -4,7 +4,7 @@
   "url": "http://jiminy.medialab.sciences-po.fr/anta/",
   "source": "https://github.com/medialab/ANTA",
   "licence": "TBD",
-  "visual": "https://a248.e.akamai.net/camo.github.com/2bc86f01da4a1990ae1710132ef89e6f94520689/687474703a2f2f6a696d696e792e6d656469616c61622e736369656e6365732d706f2e66722f616e74615f6465762f696d616765732f616e74612d30322e706e67",
+  "visual": "http://jiminy.medialab.sciences-po.fr/anta_dev/images/anta-02.png",
   "description": "ANTA or Actor Network Text Analyzer is a piece of software developed by the Sciences Po médialab to analyses medium-size text corpora, by extracting the expressions they contained in a set of texts and drawing a network of the occurrence of such expressions in the texts.",
   "doc": "https://github.com/medialab/ANTA"
 }
