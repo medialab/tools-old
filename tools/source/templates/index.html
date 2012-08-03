@@ -1,6 +1,6 @@
-{% include 'header.html' %}                                                                                                               
+{% include 'header.html' %}
 <h1>Medialab Tools</h1>
-{% if 'element1' in globals %}
+{% if 'element1' %}
   <h2 id="element1">
     <a href="{{element1.id}}.html">{{element1.name}}</a>
   </h2>
@@ -9,7 +9,7 @@
     {% if 'description' in element1 %}{{element1.description}}{% endif %}</a>
   </p>
 {% endif %}
-{% if 'element2' in globals %}                              
+{% if 'element2' %}
   <h2 id="element2">
     <a href="{{element2.id}}.html">{{element2.name}}</a>
   </h2>
@@ -18,16 +18,16 @@
     {% if 'description' in element2 %}{{element2.description}}{% endif %}</a>
   </p>
 {% endif %}
-{% if 'element3' in globals %}                              
+{% if 'element3' %}
   <h2 id="element3">
     <a href="{{element3.id}}.html">{{element3.name}}</a>
-  </h2> 
+  </h2>
   <p>
     <a href="{{element3.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}" width="200"/>
     {% if 'description' in element3 %}{{element3.description}}{% endif %}</a>
   </p>
-{% endif %}    
-{% if 'elements4' in globals %}                              
+{% endif %}
+{% if 'elements4' %}
 <ul>
   {% for element in elements4 %}
     <li>
@@ -36,5 +36,5 @@
     </li>
   {% endfor %}
 </ul>
-{% endif %}     
-{% include 'footer.html' %}                                                                                                               
+{% endif %}
+{% include 'footer.html' %}
