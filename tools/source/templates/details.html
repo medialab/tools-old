@@ -13,7 +13,9 @@
   Licence: {{licence}}
 </p>
 {% if doc %}
+{% autoescape false %}
   {{doc}}
+{% endautoescape %}
 {% endif %}
 {% if documentation %}
   <p>More documentation; <a href="{{documentation}}">{{documentation}}</a></p>
