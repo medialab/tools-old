@@ -1,40 +1,69 @@
 {% include 'header.html' %}
-<h1>Medialab Tools</h1>
-{% if element1 %}
-  <h2 id="element1">
-    <a href="{{element1.id}}.html">{{element1.name}}</a>
-  </h2>
-  <p>
-    <a href="{{element1.id}}.html"><img src="{{element1.visual}}" alt="{{element1.name}}" title="{{element1.name}}" width="300"/>
-    {% if 'description' in element1 %}{{element1.description}}{% endif %}</a>
-  </p>
-{% endif %}
-{% if element2 %}
-  <h2 id="element2">
-    <a href="{{element2.id}}.html">{{element2.name}}</a>
-  </h2>
-  <p>
-    <a href="{{element2.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}" width="200"/>
-    {% if 'description' in element2 %}{{element2.description}}{% endif %}</a>
-  </p>
-{% endif %}
-{% if element3 %}
-  <h2 id="element3">
-    <a href="{{element3.id}}.html">{{element3.name}}</a>
-  </h2>
-  <p>
-    <a href="{{element3.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}" width="200"/>
-    {% if 'description' in element3 %}{{element3.description}}{% endif %}</a>
-  </p>
-{% endif %}
-{% if elements4 %}
-<ul>
-  {% for element in elements4 %}
-    <li>
-      <a href="{{element.id}}.html"><strong>{{element.name}}</strong>
-      {% if 'description' in element %}<br/><small>{{element.description}}</small>{% endif %}</a>
-    </li>
-  {% endfor %}
-</ul>
-{% endif %}
+<header>
+  <div class="floating">
+    <img src="/tools/media/img/Sc-Po-Medialab-Gris.png" style="height:75%; padding:9px">
+
+  </div>
+  <div class="floating">
+    <h1>tools</h1>
+  </div>
+</header>
+
+<div class="wrapper">
+
+  <!-- page -->
+  <div class="page">
+    <!-- list of main elements -->
+    <div id="tools-wrapper">
+      <div id="tools">
+      {% if element1 %}
+        <a href="{{element1.id}}.html"><img src="{{element1.visual}}" alt="{{element1.name}}" title="{{element1.name}}" width="100%"/></a>
+        <h2 id="element1">
+          <a href="{{element1.id}}.html">{{element1.name}}</a>
+        </h2>
+        <p>
+          {% if 'description' in element1 %}{{element1.description}}{% endif %}
+        </p>
+      {% endif %}
+      {% if element2 %}
+        <h2 id="element2">
+          <a href="{{element2.id}}.html">{{element2.name}}</a>
+        </h2>
+        <p>
+          <a href="{{element2.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}" width="200"/>
+          {% if 'description' in element2 %}{{element2.description}}{% endif %}</a>
+        </p>
+      {% endif %}
+      {% if element3 %}
+        <h2 id="element3">
+          <a href="{{element3.id}}.html">{{element3.name}}</a>
+        </h2>
+        <p>
+          <a href="{{element3.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}" width="200"/>
+          {% if 'description' in element3 %}{{element3.description}}{% endif %}</a>
+        </p>
+      {% endif %}
+      </div>
+    </div>
+
+    <div id="screws-wrapper">
+    <!-- list of secondary elements -->
+    {% if elements4 %}
+    <ul>
+      {% for element in elements4 %}
+        <li>
+          <a href="{{element.id}}.html"><strong>{{element.name}}</strong>
+          {% if 'description' in element %}<br/><small>{{element.description}}</small>{% endif %}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+</div>
+<!-- eof wrapper -->
+
 {% include 'footer.html' %}
