@@ -292,13 +292,13 @@
 
         $('.infoPad').hide()
 
-        $('.infoPad[tool='+tool+']').css('margin-top', $(el).offset().top - $('.tool:first').offset().top + 20)
-        $('.infoPad[tool='+tool+']').show()
-
         // Scroll
         $('html, body').animate({  
             scrollTop:$(el).offset().top  
-        }, 'slow');
+        }, 'slow', function(){
+          $('.infoPad[tool='+tool+']').css('margin-top', window.pageYOffset > 251 ? window.pageYOffset - 200 : 20)//$(el).offset().top - $('.tool:first').offset().top + 20)
+          $('.infoPad[tool='+tool+']').show()
+        });
       })
 
 
@@ -307,7 +307,7 @@
         if(selectedTool==''){
           $('.infoPad').hide()
 
-          $('.infoPad[tool='+tool+']').css('margin-top', $(el).offset().top - $('.tool:first').offset().top + 20)
+          $('.infoPad[tool='+tool+']').css('margin-top', window.pageYOffset > 251 ? window.pageYOffset - 200 : 20)//$(el).offset().top - $('.tool:first').offset().top + 20)
           $('.infoPad[tool='+tool+']').show()
         }
       })
@@ -329,7 +329,7 @@
 
                 $('.infoPad').hide()
 
-                $('.infoPad[tool='+hash+']').css('margin-top', $('#'+hash).offset().top - $('.tool:first').offset().top + 20)
+                $('.infoPad[tool='+hash+']').css('margin-top', window.pageYOffset > 251 ? window.pageYOffset - 200 : 20)//$('#'+hash).offset().top - $('.tool:first').offset().top + 20)
                 $('.infoPad[tool='+hash+']').show()
             }
         }
