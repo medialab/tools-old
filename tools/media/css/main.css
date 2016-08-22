@@ -1,0 +1,189 @@
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+  background-color: #F5F5F5;
+}
+
+.tool, .infoPad{
+  margin-top: 16px;
+}
+
+.tool_classA:hover, .tool_classB:hover, .tool_classC:hover{
+  cursor: pointer;
+  background-color: #555;
+}
+
+.tool_classA[status=selected], .tool_classB[status=selected], .tool_classC[status=selected]{
+  background-color: #333;
+  /*background-color: #08c;*/
+}
+
+.tool_classA{
+    background-color: #777;
+    color: #FAFAFA;
+}
+
+.tool_classA div.visual{
+  border: 1px solid #DDD;
+  border-bottom: 0px;
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.tool_classA div.visual img{
+  max-width: 770px;
+}
+
+.tool_classA div.content{
+  padding: 10px 10px 0px 10px;
+}
+
+.tool_classA div.actions{
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+
+.tool_classB{
+  background-color: #777;
+  color: #FAFAFA;
+}
+
+.tool_classB div.visual{
+    max-height: 200px;
+    overflow: hidden;
+    border-top: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+}
+
+.tool_classB div.visual img{
+    width:100%;
+}
+
+.tool_classB div.content{
+    padding: 0px 10px 0px 10px;  
+}
+
+.tool_classB div.actions{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+
+.tool_classC{
+  background-color: #777;
+  color: #FAFAFA;
+}
+
+.tool_classC div.title{
+  padding-left: 10px;
+}
+
+.tool_classC div.content{
+  padding: 10px 10px 0px 10px;
+}
+
+.tool_classC div.actions{
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+
+
+
+.tool_other{
+  background-color: #999;
+  color: #FAFAFA;
+}
+
+.tool_other div.title{
+  padding-left: 10px;
+}
+
+.tool_other div.content{
+  padding: 10px 10px 0px 10px;
+}
+
+.tool_other div.actions{
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+a.a_other_tool{
+  color: #FAFAFA;
+}
+a.a_other_tool:hover{
+  color: #FFFFFF;
+}
+
+
+
+div.infoPad .splash{
+  border: 1px solid #DDD;
+}
+
+div.infoPad .actions{
+    text-align: right;
+}
+
+
+
+
+
+.jumbotron {
+  position: relative;
+  padding: 40px 0;
+  color: #FAFAFA;
+  text-align: center;
+  background: #444; /* Old browsers */
+}
+.jumbotron h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+/* Link styles (used on .masthead-links as well) */
+.jumbotron a {
+  color: #FAFAFA;
+  color: rgba(255,255,255,.5);
+  -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.jumbotron a:hover {
+  color: #FAFAFA;
+  text-shadow: 0 0 10px rgba(255,255,255,.25);
+}
+
+.jumbotron .love{color:#FF5C26}
+
+
+/* Subhead (other pages)
+------------------------- */
+.subhead {
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.subhead h1 {
+  font-size: 60px;
+}
+.subhead p {
+  margin-bottom: 20px;
+}
+.subhead .navbar {
+  display: none;
+}
