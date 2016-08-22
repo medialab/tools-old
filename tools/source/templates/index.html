@@ -212,7 +212,7 @@
                         </p>
                         <!-- {% if 'visual' in element %} -->
                         <!-- {% if 'url' in element %} --><a href="{{element.url}}"><!-- {% endif %} -->
-                        <!-- <img src="{{element.visual}}" alt="{{element.name}}" title="{{element.name}}" class="splash"> -->
+                        <!-- {% if loop.index > 3 %} --><img src="{{element.visual}}" alt="{{element.name}}" title="{{element.name}}" class="splash"><!-- {% endif %} -->
                         <!-- {% if 'url' in element %} --></a><!-- {% endif %} -->
                         <!-- {% endif %} -->
                         <div class="actions">
