@@ -1,69 +1,346 @@
-{% include 'header.html' %}
-<header>
-  <div class="floating">
-    <img src="/tools/media/img/Sc-Po-Medialab-Gris.png" style="height:75%; padding:9px">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Médialab Tools</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-  </div>
-  <div class="floating">
-    <h1>tools</h1>
-  </div>
-</header>
+        <link rel="stylesheet" href="media/css/bootstrap.css">
+        <link rel="stylesheet" href="media/css/bootstrap-responsive.min.css">
 
-<div class="wrapper">
+        <link rel="stylesheet" href="media/css/main.css">
 
-  <!-- page -->
-  <div class="page">
-    <!-- list of main elements -->
-    <div id="tools-wrapper">
-      <div id="tools">
-      {% if element1 %}
-        <a href="{{element1.id}}.html"><img src="{{element1.visual}}" alt="{{element1.name}}" title="{{element1.name}}" width="100%"/></a>
-        <h2 id="element1">
-          <a href="{{element1.id}}.html">{{element1.name}}</a>
-        </h2>
-        <p>
-          {% if 'description' in element1 %}{{element1.description}}{% endif %}
-        </p>
-      {% endif %}
-      {% if element2 %}
-        <h2 id="element2">
-          <a href="{{element2.id}}.html">{{element2.name}}</a>
-        </h2>
-        <p>
-          <a href="{{element2.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}" width="200"/>
-          {% if 'description' in element2 %}{{element2.description}}{% endif %}</a>
-        </p>
-      {% endif %}
-      {% if element3 %}
-        <h2 id="element3">
-          <a href="{{element3.id}}.html">{{element3.name}}</a>
-        </h2>
-        <p>
-          <a href="{{element3.id}}.html"><img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}" width="200"/>
-          {% if 'description' in element3 %}{{element3.description}}{% endif %}</a>
-        </p>
-      {% endif %}
-      </div>
-    </div>
+        <script src="media/js/libs/modernizr-2.6.1-respond-1.1.0.min.js"></script>
 
-    <div id="screws-wrapper">
-    <!-- list of secondary elements -->
-    {% if elements4 %}
-    <ul>
-      {% for element in elements4 %}
-        <li>
-          <a href="{{element.id}}.html"><strong>{{element.name}}</strong>
-          {% if 'description' in element %}<br/><small>{{element.description}}</small>{% endif %}</a>
-        </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-    </div>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
 
-    <div class="clear"></div>
-  </div>
+        <header class="jumbotron subhead" id="overview">
+              <div class="container">
+                    <h1>médialab Tools</h1>
+                    <p class="lead">Tools we develop, and tools we use</p>
+              </div>
+        </header>
 
-</div>
-<!-- eof wrapper -->
 
-{% include 'footer.html' %}
+  <div class="container">
+
+           <div class="row">
+                <div class="span7">
+
+                    <!-- {% if element1 %} -->
+                    <div class="tool tool_classA" tool="{{element1.id}}" id="{{element1.id}}">
+                        <!-- {% if 'visual' in element1 %} -->
+                        <div class="visual">
+                            <img src="{{element1.visual}}" alt="{{element1.name}}" title="{{element1.name}}" >
+                        </div>
+                        <!-- {% endif %} -->
+                        <div class="content">
+                            <h1>{{element1.name}}</h1>
+                            <p>{% if 'description' in element1 %}{{element1.description}}{% endif %}</p>
+                        </div>
+                        <div class="actions">
+                            <!-- {% if 'source' in element1 %} --><a class="btn btn-mini btn-inverse" href="{{element1.source}}">Source</a><!-- {% endif %} -->
+                            <!-- {% if 'doc' in element1 %} --><a class="btn btn-mini btn-inverse" href="{{element1.doc}}">Documentation</a><!-- {% endif %} -->
+                            <!-- {% if 'url' in element1 %} --><a class="btn btn-mini btn-primary" href="{{element1.url}}">&gt; Use it !</a><!-- {% endif %} -->
+                        </div>
+                    </div>
+                    <!-- {% endif %} -->
+
+
+                    <!-- {% if element2 %} -->
+                    <div class="tool tool_classB" tool="{{element2.id}}" id="{{element2.id}}">
+                        <div class="row">
+                            <div class="span2">
+                                <div class="content">
+                                    <h3>{{element2.name}}</h3>
+                                    <p>{% if 'description' in element2 %}{{element2.description}}{% endif %}</p>
+                                                          
+                                </div>
+                            </div>
+                            <div class="span5">
+                                <!-- {% if 'visual' in element2 %} -->
+                                <div class="visual">
+                                    <img src="{{element2.visual}}" alt="{{element2.name}}" title="{{element2.name}}" >
+                                </div>
+                                <!-- {% endif %} -->
+                                <div class="actions">
+                                    <!-- {% if 'source' in element2 %} --><a class="btn btn-mini btn-inverse" href="{{element2.source}}">Source</a><!-- {% endif %} -->
+                                    <!-- {% if 'doc' in element2 %} --><a class="btn btn-mini btn-inverse" href="{{element2.doc}}">Documentation</a><!-- {% endif %} -->
+                                    <!-- {% if 'url' in element2 %} --><a class="btn btn-mini btn-primary" href="{{element2.url}}">&gt; Use it !</a><!-- {% endif %} -->
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {% endif %} -->
+
+
+                    <!-- {% if element3 %} -->
+                    <div class="tool tool_classB" tool="{{element3.id}}" id="{{element3.id}}">
+                        <div class="row">
+                            <div class="span2">
+                                <div class="content">
+                                    <h3>{{element3.name}}</h3>
+                                    <p>{% if 'description' in element3 %}{{element3.description}}{% endif %}</p>
+                                                          
+                                </div>
+                            </div>
+                            <div class="span5">
+                                <!-- {% if 'visual' in element3 %} -->
+                                <div class="visual">
+                                    <img src="{{element3.visual}}" alt="{{element3.name}}" title="{{element3.name}}" >
+                                </div>
+                                <!-- {% endif %} -->
+                                <div class="actions">
+                                    <!-- {% if 'source' in element3 %} --><a class="btn btn-mini btn-inverse" href="{{element3.source}}">Source</a><!-- {% endif %} -->
+                                    <!-- {% if 'doc' in element3 %} --><a class="btn btn-mini btn-inverse" href="{{element3.doc}}">Documentation</a><!-- {% endif %} -->
+                                    <!-- {% if 'url' in element3 %} --><a class="btn btn-mini btn-primary" href="{{element3.url}}">&gt; Use it !</a><!-- {% endif %} -->
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {% endif %} -->
+
+
+                    <!-- {% if elements4 %} -->
+                    <!-- {% for element in elements4 %} -->
+                    <div class="tool tool_classC" tool="{{element.id}}" id="{{element.id}}">
+                        <div class="row">
+                            <div class="span2">
+                                <div class="title">
+                                    <h3>{{element.name}}</h3>
+                                </div>
+                            </div>
+                            <div class="span5">
+                                <div class="content">
+                                    <p>{% if 'description' in element %}{{element.description}}{% endif %}</p>
+                                </div>
+                                <div class="actions">
+                                    <!-- {% if 'source' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.source}}">Source</a><!-- {% endif %} -->
+                                    <!-- {% if 'doc' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.doc}}">Documentation</a><!-- {% endif %} -->
+                                    <!-- {% if 'url' in element %} --><a class="btn btn-mini btn-primary" href="{{element.url}}">&gt; Use it !</a><!-- {% endif %} -->
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- {% endfor %} -->
+                    <!-- {% endif %} -->
+
+                    <!-- {% if moreelements %} -->
+                    <!-- {% for section in moreelements %} -->
+                    <br/>
+                    <br/>
+                    <h1>{{section.name}}</h1>
+                      <!-- {% for element in section.elements %} -->
+                      <div class="tool tool_classC" tool="{{element.id}}" id="{{element.id}}">
+                          <div class="row">
+                              <div class="span2">
+                                  <div class="title">
+                                      <h3>{{element.name}}</h3>
+                                  </div>
+                              </div>
+                              <div class="span5">
+                                  <div class="content">
+                                      <p>{% if 'description' in element %}{{element.description}}{% endif %}</p>
+                                  </div>
+                                  <div class="actions">
+                                      <!-- {% if 'source' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.source}}">Source</a><!-- {% endif %} -->
+                                      <!-- {% if 'doc' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.doc}}">Documentation</a><!-- {% endif %} -->
+                                      <!-- {% if 'url' in element %} --><a class="btn btn-mini btn-primary" href="{{element.url}}">&gt; Use it !</a><!-- {% endif %} -->
+                                  </div>                            
+                              </div>
+                          </div>
+                      </div>
+                      <!-- {% endfor %} -->
+                    <!-- {% endfor %} -->
+                    <!-- {% endif %} -->
+
+
+                    <!-- {% if otherelements %} -->
+                    <br/>
+                    <br/>
+                    <h1>Tools from others we use &amp; like</h1>
+                      <!-- {% for element in otherelements %} -->
+                      <div class="tool tool_other" tool="{{element.id}}" id="{{element.id}}">
+                          <div class="row">
+                              <div class="span2">
+                                  <div class="title">
+                                      <!-- {% if 'url' in element %} -->
+                                      <a href="{{element.url}}" class="a_other_tool"><h3>{{element.name}}</h3></a>
+                                      <!-- {% else %} -->
+                                        <!-- {% if 'source' in element %} -->
+                                        <a href="{{element.source}}" class="a_other_tool"><h3>{{element.name}}</h3></a>
+                                        <!-- {% else %} -->
+                                        <h3>{{element.name}}</h3>
+                                        <!-- {% endif %} -->
+                                      <!-- {% endif %} -->
+                                  </div>
+                              </div>
+                              <div class="span5">
+                                  <div class="content">
+                                      <p>{% if 'description' in element %}{{element.description}}{% endif %}</p>
+                                  </div>
+                                  <div class="actions">
+                                      <!-- {% if 'source' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.source}}" >Source</a><!-- {% endif %} -->
+                                      <!-- {% if 'doc' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.doc}}">Documentation</a><!-- {% endif %} -->
+                                      <!-- {% if 'url' in element %} --><a class="btn btn-mini btn-primary" href="{{element.url}}">&gt; Go !</a><!-- {% endif %} -->
+                                  </div>                            
+                              </div>
+                          </div>
+                      </div>
+                      <!-- {% endfor %} -->
+                    <!-- {% endif %} -->
+
+
+                </div>
+                <div class="span5">
+
+                    <!-- {% for element in sidebar %} -->
+                    <!-- {% if element %} -->
+                    <div class="infoPad" style="display:none;" tool="{{element.id}}">
+                        <p>
+                          <strong><i class="icon-hand-right"></i> {{element.name}}</strong>
+                          <!-- {% if 'authors' in element %} --><span class="muted">by {% print ", ".join(element.authors) %}</span><!-- {% endif %} -->
+                        </p>
+                        <!-- {% if 'visual' in element %} -->
+                        <!-- {% if 'url' in element %} --><a href="{{element.url}}"><!-- {% endif %} -->
+                        <!-- <img src="{{element.visual}}" alt="{{element.name}}" title="{{element.name}}" class="splash"> -->
+                        <!-- {% if 'url' in element %} --></a><!-- {% endif %} -->
+                        <!-- {% endif %} -->
+                        <div class="actions">
+                            <!-- {% if 'source' in element %} --><a class="btn" href="{{element.source}}">Source</a><!-- {% endif %} -->
+                            <!-- {% if 'doc' in element %} --><a class="btn" href="{{element.doc}}">Documentation</a><!-- {% endif %} -->
+                            <!-- {% if 'url' in element %} --><a class="btn btn-primary" href="{{element.url}}">&gt; Use it !</a><!-- {% endif %} -->
+                        </div>
+                        
+                        <!-- {% if element.community %} -->
+                        <p>Community: <a href="{{element.community}}">{{element.community}}</a></p>
+                        <!-- {% endif %} -->
+
+                        <!-- {% if element.readme_html %} -->
+                        <!-- {% autoescape false %} -->
+                        {{element.readme_html}}
+                        <!-- {% endautoescape %} -->
+                        <!-- {% if element.doc %} -->
+                        <p><a href="{{element.doc}}">more...</a></p>
+                        <!-- {% endif %} -->
+                        <!-- {% endif %} -->
+
+                    </div>
+                    <!-- {% endif %} -->
+                    <!-- {% endfor %} -->
+
+            </div>
+        </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <hr/>
+                </div>
+                <div class="span4">
+                </div>
+                <div class="span4">
+                </div>
+                <div class="span4">
+                    <div style="text-align:right">
+                        <a href="http://medialab.sciences-po.fr"><img src="media/res/logosp_fonce.png"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="media/js/libs/jquery-1.8.0.min.js"><\/script>')</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37695848-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+  var selectedTool = ''
+  
+  
+
+  $('.tool').each(function(i, el){
+    if(!$(el).hasClass('tool_other')){
+      var tool = $(el).attr('tool')
+      // Tool selection
+      $(el).click(function(){
+        selectedTool = tool
+        $('.tool[tool!='+tool+']').attr('status', '')
+        $('.tool[tool='+tool+']').attr('status', 'selected')
+
+        $('.infoPad').hide()
+
+        $('.infoPad[tool='+tool+']').css('margin-top', $(el).offset().top - $('.tool:first').offset().top + 20)
+        $('.infoPad[tool='+tool+']').show()
+
+        // Scroll
+        $('html, body').animate({  
+            scrollTop:$(el).offset().top  
+        }, 'slow');
+      })
+
+
+      // Mouse over
+      $(el).mouseenter(function(){
+        if(selectedTool==''){
+          $('.infoPad').hide()
+
+          $('.infoPad[tool='+tool+']').css('margin-top', $(el).offset().top - $('.tool:first').offset().top + 20)
+          $('.infoPad[tool='+tool+']').show()
+        }
+      })
+      /*$(el).mouseleave(function(){
+        $('.infoPad').hide()
+      })*/
+    }
+  })
+
+
+    // Au chargement, afficher la barre à droite si fragment
+    $(window).load(function(){
+        if(window.location.hash.indexOf('#') >= 0){
+            var hash = window.location.hash.replace('#', '')
+            if(hash != '' && $('#'+hash).length>0){
+                selectedTool = hash
+                $('.tool[tool!='+hash+']').attr('status', '')
+                $('.tool[tool='+hash+']').attr('status', 'selected')
+
+                $('.infoPad').hide()
+
+                $('.infoPad[tool='+hash+']').css('margin-top', $('#'+hash).offset().top - $('.tool:first').offset().top + 20)
+                $('.infoPad[tool='+hash+']').show()
+            }
+        }
+    })
+
+</script>
+
+<!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+    <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+    </body>
+</html>

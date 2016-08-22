@@ -1,7 +1,17 @@
 {
   "title": "Medialab tools",
-  "element1": "anta",
-  "element2": "heatgraph",
-  "element3": "iwanthue",
-  "elements4": ["table2net","navicrawler","tubemynet"]
+  "element1": "hyphe",
+  "element2": "iwanthue",
+  "element3": "manylines",
+  "elements4": ["seealsology", "table2net", "sciencescape", "csv-rinse-repeat"],
+  "moreelements": [{
+      "name": "Advanced tools and libraries for developers",
+      "elements": ["sigma", "artoo", "gazouilloire", "pygexf", "issue2navicrawler"]
+    }, {
+      "name": "Other old unmaintained projects",
+      "elements": ["navicrawler", "zup", "drive-in", "heatgraph", "anta", "zup"]
+    }],   
+  "otherelements": ["gephi", "raw", "refine"],
+  "more": ["khartis", "zup", "graphology", "quinoa", "hybro", "google-bookmarklets", "catwalk"]
+  "forgotten_tools": ["batchtrends", "drive-in", "drive-out"]
 }

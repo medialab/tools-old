@@ -1,9 +1,0 @@
-{
-  "name": "HeatGraph",
-  "authors": ["Mathieu Jacomy"],
-  "url": "http://jiminy.medialab.sciences-po.fr/tools/heatgraph/",
-  "source": "https://github.com/medialab/heatgraph",
-  "licence": "TBD",
-  "visual": "http://jiminy.medialab.sciences-po.fr/tools/heatgraph/img/overlay_heatmap.png",
-  "description": "Heatgraph is ..."
-}
