@@ -1,6 +1,6 @@
 {
   "name": "Gephi",
-  "authors": [],
+  "authors": ["Mathieu Jacomy", "Matthieu Bastian", "Sébastien Heymann"],
   "url": "https://gephi.org/",
   "source": "https://github.com/gephi/gephi",
   "licence": "GPL/CDDL",

@@ -1,10 +1,10 @@
 {
-  "name": "Google Refine",
+  "name": "Open Refine",
   "authors": ["Google"],
   "url": "",
-  "source": "http://code.google.com/p/google-refine/",
+  "source": "https://github.com/OpenRefine/OpenRefine",
   "licence": "TBD",
   "visual": "",
-  "description": "",
+  "description": "Open Refine from Google is always useful when dealing with dirty data.",
   "doc": ""
 }

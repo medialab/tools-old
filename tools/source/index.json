@@ -2,17 +2,16 @@
   "title": "Medialab tools",
   "element1": "hyphe",
   "element2": "iwanthue",
-  "element3": "manylines",
-  "elements4": ["seealsology", "table2net", "sciencescape", "csv-rinse-repeat", "google-bookmarklets"],
+  "element3": "seealsology",
+  "elements4": ["manylines", "sciencescape", "table2net", "google-bookmarklets", "csv-rinse-repeat"],
   "moreelements": [{
-      "name": "Advanced tools and libraries for developers",
-      "elements": ["sigma", "artoo", "gazouilloire", "pygexf", "issue2navicrawler"]
+      "name": "Advanced tools for developers",
+      "elements": ["sigma", "artoo", "gazouilloire", "pygexf"]
     }, {
-      "name": "Other old unmaintained projects",
-      "elements": ["navicrawler", "heatgraph", "anta", "zup", "drive-in"]
-    }],   
+      "name": "Other uncontinued projects",
+      "elements": ["heatgraph", "anta", "zup", "drive-in", "navicrawler", "issue2navicrawler"]
+    }],
   "otherelements": ["gephi", "raw", "refine"],
-  "todo": ["catwalk", "khartis", "hybro", "sandcrawler", "graphology", "quinoa", "manet", "palladio", "voyant", "datawrapper", "mediacloud"],
-  "forgotten_tools": ["batchtrends", "drive-out", "tubemynet"],
-  "others_non_public": ["apparatus", "kanboard", "clipperz", "portia", "treeio"]
+  "todo": ["catwalk", "khartis", "dmi-tools", "hybro", "sandcrawler", "manet", "palladio", "voyant", "datawrapper", "mediacloud", "quinoa", "graphology"],
+  "forgotten_tools": ["batchtrends", "drive-out", "tubemynet"]
 }
