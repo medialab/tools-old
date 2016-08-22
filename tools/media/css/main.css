@@ -132,7 +132,10 @@ div.infoPad .actions{
     text-align: right;
 }
 
-
+.actions .credits {
+    color: #D0D0D0;
+    float:left;
+}
 
 
 

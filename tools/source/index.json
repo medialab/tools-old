@@ -11,7 +11,7 @@
       "name": "Other uncontinued projects",
       "elements": ["heatgraph", "anta", "zup", "drive-in", "navicrawler", "issue2navicrawler"]
     }],
-  "otherelements": ["gephi", "raw", "refine"],
-  "todo": ["catwalk", "khartis", "dmi-tools", "hybro", "sandcrawler", "manet", "palladio", "voyant", "datawrapper", "mediacloud", "quinoa", "graphology"],
+  "otherelements": ["gephi", "dmi-tools", "raw", "manet", "refine"],
+  "todo": ["catwalk", "khartis", "hybro", "sandcrawler", "palladio", "voyant", "datawrapper", "mediacloud", "quinoa", "graphology"],
   "forgotten_tools": ["batchtrends", "drive-out", "tubemynet"]
 }

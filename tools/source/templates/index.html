@@ -194,6 +194,7 @@
                                       <p>{% if 'description' in element %}{{element.description}}{% endif %}</p>
                                   </div>
                                   <div class="actions">
+                                      <!-- {% if 'authors' in element %} --><span class="credits">by {% print ", ".join(element.authors) %}</span><!-- {% endif %} -->
                                       <!-- {% if 'source' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.source}}" >Source</a><!-- {% endif %} -->
                                       <!-- {% if 'doc' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.doc}}">Documentation</a><!-- {% endif %} -->
                                       <!-- {% if 'publi' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.publi}}">Publication</a><!-- {% endif %} -->
