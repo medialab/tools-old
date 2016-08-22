@@ -4,6 +4,7 @@
   "url": "http://hyphe.medialab.sciences-po.fr/",
   "source": "https://github.com/medialab/hyphe",
   "doc": "https://github.com/medialab/hyphe/tree/master/doc",
+  "publi": "https://hal.archives-ouvertes.fr/hal-01293078/",
   "licence": "LGPL/CECILL-C",
   "visual": "http://hyphe.medialab.sciences-po.fr/img/screenshots/network.png",
   "description": "Hyphe is a web corpus curation tool featuring a research-driven web crawler",
