@@ -3,15 +3,16 @@
   "element1": "hyphe",
   "element2": "iwanthue",
   "element3": "manylines",
-  "elements4": ["seealsology", "table2net", "sciencescape", "csv-rinse-repeat"],
+  "elements4": ["seealsology", "table2net", "sciencescape", "csv-rinse-repeat", "google-bookmarklets"],
   "moreelements": [{
       "name": "Advanced tools and libraries for developers",
       "elements": ["sigma", "artoo", "gazouilloire", "pygexf", "issue2navicrawler"]
     }, {
       "name": "Other old unmaintained projects",
-      "elements": ["navicrawler", "zup", "drive-in", "heatgraph", "anta", "zup"]
+      "elements": ["navicrawler", "heatgraph", "anta", "zup", "drive-in"]
     }],   
   "otherelements": ["gephi", "raw", "refine"],
-  "more": ["khartis", "zup", "graphology", "quinoa", "hybro", "google-bookmarklets", "catwalk"]
-  "forgotten_tools": ["batchtrends", "drive-in", "drive-out"]
+  "todo": ["catwalk", "khartis", "hybro", "sandcrawler", "graphology", "quinoa", "manet", "palladio", "voyant", "datawrapper", "mediacloud"],
+  "forgotten_tools": ["batchtrends", "drive-out", "tubemynet"],
+  "others_non_public": ["apparatus", "kanboard", "clipperz", "portia", "treeio"]
 }

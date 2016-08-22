@@ -1,0 +1,10 @@
+{
+  "name": "sigma.js",
+  "authors": ["Alexis Jacomy", "Guillaume Plique"],
+  "url": "http://sigmajs.org",
+  "source": "https://github.com/jacomyal/sigma.js",
+  "licence": "MIT",
+  "visual": "http://tools.medialab.sciences-po.fr/sigma/sigma-visual.png",
+  "description": "Sigma is a JavaScript library dedicated to graph drawing. It makes easy to publish networks on Web pages, and allows developers to integrate network exploration in rich Web applications.",
+  "doc": ""
+}

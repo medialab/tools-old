@@ -1,0 +1,11 @@
+{
+  "name": "pyGEXF",
+  "authors": ["Paul Girard"],
+  "url": "",
+  "source": "https://github.com/paulgirard/pygexf",
+  "licence": "LGPL/CECILL-C",
+  "visual": "",
+  "description": "A python library to read or write gexf format, the xml file format to store graph.",
+  "description_fr": "PyGexf est une librairie permettant de manipuler le format de graphe Gexf depuis le langage de programmation python. Cette librairie a déjà été reprise par la communauté open source notamment pour intégrer les fonctionnalités d’import/export du format Gexf par la librairie NetworkX.",
+  "doc": "http://packages.python.org/pygexf/index.html"
+}

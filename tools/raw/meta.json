@@ -1,0 +1,9 @@
+{
+  "name": "Raw",
+  "authors": ["Giorgio Caviglia", "Michele Mauri"],
+  "url": "http://tools.medialab.sciences-po.fr/raw/",
+  "source": "https://github.com/densitydesign/raw",
+  "licence": "LGPL v3",
+  "visual": "",
+  "description": "RAW is an open web tool developed at the DensityDesign Research Lab (Politecnico di Milano) to create custom vector-based visualizations on top of the amazing d3.js library by Mike Bostock. Primarily conceived as a tool for designers and vis geeks, RAW aims at providing a missing link between spreadsheet applications (e.g. Microsoft Excel, Apple Numbers, Google Docs, OpenRefine, …) and vector graphics editors (e.g. Adobe Illustrator, Inkscape, …)."
+}
