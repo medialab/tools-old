@@ -127,10 +127,11 @@
                                     <p>{% if 'description' in element %}{{element.description}}{% endif %}</p>
                                 </div>
                                 <div class="actions">
+                                    <!-- {% if 'dev' in element and element['dev'] %} --><span class="btn btn-mini btn-warning active">Still in development</span><!-- {% endif %} -->
                                     <!-- {% if 'source' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.source}}">Source</a><!-- {% endif %} -->
                                     <!-- {% if 'doc' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.doc}}">Documentation</a><!-- {% endif %} -->
                                     <!-- {% if 'publi' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.publi}}">Publication</a><!-- {% endif %} -->
-                                    <!-- {% if 'url' in element %} --><a class="btn btn-mini btn-primary" href="{{element.url}}">&gt; Use it !</a><!-- {% endif %} -->
+                                    <!-- {% if 'url' in element %} --><a class="btn btn-mini btn-primary" href="{{element.url}}">&gt; {% if 'dev' in element and element['dev'] %}Try{% else %}Use{% endif %} it !</a><!-- {% endif %} -->
                                 </div>                            
                             </div>
                         </div>
@@ -156,10 +157,11 @@
                                       <p>{% if 'description' in element %}{{element.description}}{% endif %}</p>
                                   </div>
                                   <div class="actions">
+                                    <!-- {% if 'dev' in element and element['dev'] %} --><span class="btn btn-mini btn-warning active">Still in development</span><!-- {% endif %} -->
                                       <!-- {% if 'source' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.source}}">Source</a><!-- {% endif %} -->
                                       <!-- {% if 'doc' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.doc}}">Documentation</a><!-- {% endif %} -->
                                       <!-- {% if 'publi' in element %} --><a class="btn btn-mini btn-inverse" href="{{element.publi}}">Publication</a><!-- {% endif %} -->
-                                      <!-- {% if 'url' in element %} --><a class="btn btn-mini btn-primary" href="{{element.url}}">&gt; Use it !</a><!-- {% endif %} -->
+                                      <!-- {% if 'url' in element %} --><a class="btn btn-mini btn-primary" href="{{element.url}}">&gt; {% if 'dev' in element and element['dev'] %}Try{% else %}Use{% endif %} it !</a><!-- {% endif %} -->
                                   </div>                            
                               </div>
                           </div>

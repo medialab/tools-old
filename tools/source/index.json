@@ -12,6 +12,6 @@
       "elements": ["heatgraph", "anta", "zup", "drive-in", "navicrawler", "issue2navicrawler"]
     }],
   "otherelements": ["gephi", "dmi-tools", "raw", "manet", "refine"],
-  "todo": ["palladio", "voyant", "datawrapper", "mediacloud", "quinoa", "graphology"],
+  "todo": ["palladio", "voyant", "datawrapper", "mediacloud", "quinoa", "graphology", "agent-smith"],
   "forgotten_tools": ["batchtrends", "drive-out", "tubemynet"]
 }
