@@ -1,0 +1,10 @@
+{
+  "name": "UMap",
+  "authors": ["Yohan Boniface"],
+  "url": "https://umap.openstreetmap.fr/en/",
+  "source": "https://github.com/umap-project/umap/",
+  "doc": "https://wiki.openstreetmap.org/wiki/UMap",
+  "licence": "WTFPL",
+  "visual": "",
+  "description": "uMap let you create maps with OpenStreetMap layers in a minute and embed them in your site."
+}
