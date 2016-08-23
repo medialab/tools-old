@@ -3,7 +3,7 @@
   "authors": ["Stanford HDLab (Nicole Coleman, Ethan Jewett, Giorgio Caviglia)"],
   "url": "http://hdlab.stanford.edu/palladio-app/#/upload",
   "source": "https://github.com/humanitiesplusdesign/palladio",
-  "doc": "http://hdlab.stanford.edu/palladio/help/"
+  "doc": "http://hdlab.stanford.edu/palladio/help/",
   "licence": "MIT",
   "visual": "http://hdlab.stanford.edu/palladio/public/apple-touch-icon-120x120.png",
   "description": "Palladio is a product data-driven tool to build networks in History and analyze relationships across time though a graphical interfaces based on humanistic inquiry."
