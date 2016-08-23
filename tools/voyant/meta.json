@@ -1,0 +1,10 @@
+{
+  "name": "Voyant Tools",
+  "authors": ["Stéfan Sinclair", "Geoffrey Rockwell"],
+  "url": "http://voyant-tools.org/",
+  "source": "https://github.com/sgsinclair/VoyantServer",
+  "doc": "http://docs.voyant-tools.org/start/"
+  "licence": "GPL v3",
+  "visual": "http://voyant-tools.org/resources/images/voyant-see.png",
+  "description": "Voyant Server is a web application launcher for Voyant Tools – it makes it easy to run a stand-alone instance of Voyant Tools on your local machine, which has several potential advantages (performance, security, privacy, reliability, etc.) compared to the hosted version."
+}
