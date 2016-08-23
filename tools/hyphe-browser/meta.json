@@ -1,0 +1,9 @@
+{
+  "name": "Hyphe Browser",
+  "authors": ["Byte Club (Nicolas Chambrier, Bruno Heridet)", "Benjamin Ooghe-Tabanou", "Mathieu Jacomy", "Thomas Tari", "Donato Ricci", "Agata Brill"],
+  "url": "https://github.com/medialab/hyphe-browser/releases",
+  "source": "https://github.com/medialab/hyphe-browser",
+  "licence": "LGPL v3",
+  "visual": "",
+  "description": "A full browser connected to a Hyphe server to constitute, navigate and categorize the webpages of your corpus in situ the Navicrawler way. (still in development)"
+}

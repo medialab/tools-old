@@ -1,0 +1,10 @@
+{
+  "name": "Manet",
+  "authors": ["Vladislav Bauer"],
+  "url": "https://manet.herokuapp.com/",
+  "source": "https://github.com/vbauer/manet",
+  "licence": "MIT",
+  "visual": "",
+  "description": "Manet is an easily installable REST API server which allows capturing screenshots of websites using various parameters."
+}
+

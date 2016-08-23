@@ -1,0 +1,10 @@
+{
+  "name": "Sandcrawler",
+  "authors": ["Guillaume Plique"],
+  "url": "http://medialab.github.io/sandcrawler/",
+  "source": "https://github.com/medialab/sandcrawler",
+  "licence": "LGPL v3",
+  "visual": "",
+  "description": "Take advantage of artoo.js scraping features in a node.js serverside crawling framework optionally using PhantomJS. (still in development)"
+}
+

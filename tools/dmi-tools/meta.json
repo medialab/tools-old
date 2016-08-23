@@ -1,0 +1,9 @@
+{
+  "name": "DMI tools",
+  "authors": ["the Digital Methods Initiative (Erik Borra, Bernhard Rieder, ...)"],
+  "url": "https://wiki.digitalmethods.net/Dmi/ToolDatabase",
+  "source": "",
+  "licence": "",
+  "visual": "",
+  "description": "Issuecrawler, the Lippmanian Device, TCAT for twitter collection, NetVizz for Facebook, Google/Amazon/Wikipedia/... scrapers: plenty of useful digital tools for sociologists built by the Digital Methods Initiative at the university of Amsterdam"
+}
