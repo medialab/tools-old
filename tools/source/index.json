@@ -11,7 +11,7 @@
       "name": "Other uncontinued projects",
       "elements": ["heatgraph", "anta", "zup", "drive-in", "navicrawler", "issue2navicrawler"]
     }],
-  "otherelements": ["gephi", "dmi-tools", "raw", "palladio", "voyant", "umap", "manet", "refine"],
+  "otherelements": ["gephi", "dmi-tools", "raw", "palladio", "cortext", "voyant", "umap", "manet", "refine"],
   "todo": ["datawrapper", "mediacloud", "quinoa", "graphology", "agent-smith", "talisman"],
   "forgotten_tools": ["batchtrends", "drive-out", "tubemynet"]
 }
