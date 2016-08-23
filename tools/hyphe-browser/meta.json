@@ -1,6 +1,6 @@
 {
   "name": "Hyphe Browser",
-  "authors": ["Byte Club (Nicolas Chambrier, Bruno Heridet)", "Benjamin Ooghe-Tabanou", "Mathieu Jacomy", "Thomas Tari", "Donato Ricci", "Agata Brill"],
+  "authors": ["Thomas Tari", "Benjamin Ooghe-Tabanou", "Mathieu Jacomy", "Byte Club (Nicolas Chambrier, Bruno Heridet)", "Donato Ricci", "Agata Brill"],
   "url": "https://github.com/medialab/hyphe-browser/releases",
   "source": "https://github.com/medialab/hyphe-browser",
   "dev": true,
