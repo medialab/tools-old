@@ -1,0 +1,10 @@
+{
+  "name": "CorText",
+  "authors": ["IFRIS (Jean-Philippe Cointet, Philippe Breucker, Guillaume Orsal)"],
+  "url": "http://manager.cortext.net/",
+  "source": "https://github.com/cortext",
+  "doc": "https://docs.cortext.net/",
+  "licence": "",
+  "visual": "",
+  "description": "Gephi is an interactive visualization and exploration platform for all kinds of networks and complex systems, dynamic and hierarchical graphs. Runs on Windows, Linux and Mac OS X. Gephi is open-source and free."
+}
