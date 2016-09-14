@@ -4,6 +4,6 @@
   "url": "https://medialab.github.io/catwalk/",
   "source": "https://github.com/medialab/catwalk",
   "licence": "GPL v3",
-  "visual": "",
+  "visual": "catwalk.png",
   "description": "A tweet curation tool for humanities. Takes output from Gazouilloire or TCAT and lets one easily browse all tweets to select them qualitatively."
 }
