@@ -1,0 +1,11 @@
+{
+  "name": "Khartis",
+  "authors": ["Atelier de Cartographie (Patrice Mitrano, Thomas Ansart, Benoît Martin, Antoine Rio)", "APYX (Arnaud Pezel)", "Benjamin Ooghe-Tabanou", "Audrey Baneyx"],
+  "url": "http://tools.medialab.sciences-po.fr/carto/",
+  "source": "https://github.com/AtelierCartographie/Khartis",
+  "doc": "http://www.sciencespo.fr/cartographie/khartis/",
+  "licence": "MIT",
+  "visual": "http://www.sciencespo.fr/cartographie/khartis/assets/img/Khartis-header.png",
+  "description": "Easily create rich qualitative and quantitative maps from CSV files against different geographical projections."
+}
+

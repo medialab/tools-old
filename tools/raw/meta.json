@@ -1,9 +1,9 @@
 {
-  "name": "Raw",
+  "name": "RawGraphs",
   "authors": ["Density Design (Giorgio Caviglia, Michele Mauri)"],
-  "url": "http://tools.medialab.sciences-po.fr/raw/",
+  "url": "http://app.rawgraphs.io",
   "source": "https://github.com/densitydesign/raw",
-  "licence": "LGPL v3",
+  "licence": "Apache v2",
   "visual": "",
   "description": "Developed by the Density Design Research Lab at Politecnico di Milano, Raw is a web interface to help easily create custom vector-based visualizations on top of the amazing d3.js library by Mike Bostock."
 }

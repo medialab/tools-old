@@ -3,13 +3,13 @@
   "element1": "hyphe",
   "element2": "iwanthue",
   "element3": "seealsology",
-  "elements4": ["manylines", "sciencescape", "table2net", "khartis", "catwalk", "hyphe-browser", "google-bookmarklets"],
+  "elements4": ["sciencescape", "graph-recipes", "table2net", "khartis", "catwalk", "hyphe-browser", "google-bookmarklets"],
   "moreelements": [{
       "name": "Advanced tools for developers",
       "elements": ["sigma", "artoo", "sandcrawler", "csv-rinse-repeat", "gazouilloire", "pygexf"]
     }, {
       "name": "Other uncontinued projects",
-      "elements": ["heatgraph", "anta", "zup", "drive-in", "navicrawler", "issue2navicrawler"]
+      "elements": ["manylines", "heatgraph", "anta", "zup", "drive-in", "navicrawler", "issue2navicrawler"]
     }],
   "otherelements": ["gephi", "dmi-tools", "raw", "palladio", "cortext", "voyant", "umap", "manet", "refine"],
   "todo": ["datawrapper", "mediacloud", "quinoa", "graphology", "agent-smith", "talisman"],
