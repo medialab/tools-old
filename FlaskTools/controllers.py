@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, send_from_directory, abort
 from FlaskTools import config, application as app
 from config import SOURCE_FOLDER, DATA_FOLDER
 import os, re, glob, markdown, json, codecs
@@ -93,3 +93,10 @@ def element(elementname):
         data = gather_element_data(elementname, meta)
         return render_template("details.html", **data)
 
+@app.route("/media/<path:path>")
+def filesystem(path):
+    try:
+        return send_from_directory('media', path)
+    except Exception as e:
+        print type(e), e, os.getcwd(), os.path.join(directory, filename)
+        abort(403)
