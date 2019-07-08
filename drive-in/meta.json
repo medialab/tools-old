@@ -1,0 +1,10 @@
+{
+  "name": "Drive-In",
+  "authors": ["Daniele Guido", "Davy Brown"],
+  "url": "",
+  "source": "https://github.com/medialab/drive-in",
+  "licence": "LGPL/CECILL-C",
+  "visual": "",
+  "description": "Publish a simple website from a _public_ google drive folder without coding in HTML",
+  "doc": ""
+}

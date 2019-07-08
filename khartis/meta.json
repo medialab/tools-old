@@ -1,7 +1,7 @@
 {
   "name": "Khartis",
   "authors": ["Atelier de Cartographie (Patrice Mitrano, Thomas Ansart, Benoît Martin, Antoine Rio)", "APYX (Arnaud Pezel)", "Benjamin Ooghe-Tabanou", "Audrey Baneyx"],
-  "url": "http://tools.medialab.sciences-po.fr/carto/",
+  "url": "http://www.sciencespo.fr/cartographie/khartis/app/",
   "source": "https://github.com/AtelierCartographie/Khartis",
   "doc": "http://www.sciencespo.fr/cartographie/khartis/",
   "dev": true,

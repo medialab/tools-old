@@ -1,0 +1,9 @@
+{
+  "name": "issue 2 navicrawler",
+  "authors": ["Paul Girard"],
+  "url": "",
+  "source": "https://github.com/paulgirard/webcorpus",
+  "licence": "LGPL/CECILL-C",
+  "visual": "",
+  "description": "A python library to transform a issuecrawler xml file into a navicrawler wxsf (xml) file format."
+}

@@ -1,1 +1,9 @@
-/var/opt/zup/meta.json
+{
+  "name": "ZUP",
+  "authors": ["Daniele Guido"],
+  "url": "",
+  "source": "https://github.com/medialab/zup",
+  "licence": "LGPL/CECILL-C",
+  "visual": "",
+  "description": "A simple interface to extract texts from (almost) any url."
+}
