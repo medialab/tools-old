@@ -93,10 +93,10 @@ def element(elementname):
         data = gather_element_data(elementname, meta)
         return render_template("details.html", **data)
 
-@app.route("/media/<path:path>")
+@app.route("/<path:path>")
 def filesystem(path):
     try:
-        return send_from_directory('media', path)
+        return send_from_directory(path)
     except Exception as e:
-        print type(e), e, os.getcwd(), os.path.join(directory, filename)
-        abort(403)
+        print "ERROR, trying to access non existing file", path, type(e), e
+        abort(404)
