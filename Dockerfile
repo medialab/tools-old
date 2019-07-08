@@ -1,14 +1,13 @@
-FROM python:2.7
+FROM python:2.7-alpine
 
 WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
 
-COPY FlaskTools/config.py.example /app/FlaskTools/config.py
-
-RUN sed -i 's/DATA_FOLDER = ""/DATA_FOLDER = "/app/tools"' /app/FlaskTools/config.py
-
 RUN pip install -r /app/requirements.txt
+
+COPY . /app/
+COPY FlaskTools/config.py.example /app/FlaskTools/config.py
 
 EXPOSE 5000
 
