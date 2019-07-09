@@ -1,8 +1,15 @@
-from flask import render_template, send_from_directory, abort
-from FlaskTools import config, application as app
-from config import SOURCE_FOLDER, DATA_FOLDER
-import os, re, glob, markdown, json, codecs
+# -*- coding: utf-8 -*-
+
+import os, re, glob, json, codecs
+import markdown
 from docutils import core as rst2html
+from flask import Flask, render_template, send_from_directory, abort
+
+from config import DATA_FOLDER, SOURCE_FOLDER, TEMPLATE_FOLDER, DEBUG, HOST, PORT
+
+
+app = Flask('médialab Tools', template_folder=TEMPLATE_FOLDER)
+
 
 def gather_element_data(elementname, element_meta_file):
     try:
@@ -22,6 +29,7 @@ def gather_element_data(elementname, element_meta_file):
         result["readme_html"] = doc
     return result
 
+
 re_rel_links = re.compile(r'(\[[^]]+\]\()([^)]+)\)')
 clean_rel_links = lambda md, source: re_rel_links.sub(lambda x: '%s%s)' % (x.group(1), (x.group(2) if x.group(2).lower().startswith('http') else '%s/blob/master/%s' % (source.strip('/'), x.group(2).strip('/')))), md)
 def find_readme(folder, source):
@@ -39,6 +47,7 @@ def find_readme(folder, source):
         except:
             return None
     return None
+
 
 @app.route("/")
 @app.route("/index.html")
@@ -87,16 +96,23 @@ def index():
 
     return render_template("index.html", **index_data)
 
+
 @app.route("/<elementname>.html")
 def element(elementname):
     with codecs.open(os.path.join(DATA_FOLDER, elementname, "meta.json"), mode="r", encoding="utf-8") as meta:
         data = gather_element_data(elementname, meta)
         return render_template("details.html", **data)
 
+
 @app.route("/<path:path>")
 def filesystem(path):
     try:
-        return send_from_directory(path)
+        return send_from_directory(DATA_FOLDER, path)
     except Exception as e:
         print "ERROR, trying to access non existing file", path, type(e), e
         abort(404)
+
+
+if __name__ == "__main__":
+    print HOST
+    app.run(host=HOST, port=PORT, debug=DEBUG)
