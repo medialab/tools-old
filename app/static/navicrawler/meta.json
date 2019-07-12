@@ -1,10 +1,10 @@
 {
   "name": "Navicrawler",
   "authors": ["Mathieu Jacomy"],
-  "url": "http://webatlas.fr/wp/navicrawler/",
-  "doc": "http://webatlas.fr/wp/share/navicrawler/Guide%20m%e9thodo%20NC%202007.pdf",
+  "url": "https://github.com/medialab/navicrawler/raw/master/builds/navicrawler1701.xpi",
+  "doc": "https://github.com/medialab/navicrawler",
   "source": "",
-  "licence": "TBD",
-  "visual": "",
+  "licence": "GPL v3",
+  "visual": "https://raw.githubusercontent.com/medialab/navicrawler/master/visual.png",
   "description": "Use this old tool to explore the web in Firefox and build a corpus. Export the hyperlink network to Gephi."
 }
