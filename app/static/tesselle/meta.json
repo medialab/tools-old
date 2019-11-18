@@ -5,6 +5,6 @@
   "source": "https://github.com/medialab/tesselle/",
   "licence": "MIT",
   "visual": "https://raw.githubusercontent.com/medialab/tesselle/master/preview.png",
-  "description": "Tesselle - The front-end IIIF",
+  "description": "Tesselle is a web application that allows you to upload high definition images and add text comments to all or part of this image. It allows you to annotate the image and create a dynamic storytelling with it, then to export this story and replay it on your website.",
   "doc": ""
 }
